@@ -1,0 +1,17 @@
+{
+  "name": "tinylinks",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {},
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "start": "nodemon --ignore public server.js"
+  },
+  "dependencies": {
+    "turbolinks": "^5.0.0"
+  }
+}
