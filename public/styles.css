@@ -41,15 +41,14 @@ body.dark {
 }
 
 .settings-controls input {
-  margin-right: 0.2em;
-  vertical-align: middle;
+  margin-right: 0.5em;
 }
 
 .settings-controls label {
   padding: 0.5em 0;
 }
 
-.grid-1 {
+.grid {
   padding-top: 40px;
   display: grid;
   width: 100%;
@@ -59,10 +58,8 @@ body.dark {
   grid-gap: 2em;
 }
 
-/* items */
-
-.grid-1 div,
-.grid-1 a {
+.grid div,
+.grid a {
   color: rgba(255, 255, 255, 0.4);
   font-size: 20px;
   padding: 20px;
@@ -71,62 +68,8 @@ body.dark {
   min-height: 200px;
 }
 
-.color1 {
-  background: #b03532;
-}
-.color2 {
-  background: #33a8a5;
-}
-.color3 {
-  background: #ff9069;
-}
-.color4 {
-  background: #6a478f;
-}
-.color5 {
-  background: #3d8bb1;
-}
-.color6 {
-  background: #4464a1;
-}
-.color7 {
-  background: #e03f3f;
-}
-.color8 {
-  background: #59a627;
-}
-.color9 {
-  background: #b03532;
-}
-.color10 {
-  background: #4464a1;
-}
-.color11 {
-  background: #33a8a5;
-}
-.color12 {
-  background: #ff9069;
-}
-.color13 {
-  background: #3d8bb1;
-}
-.color14 {
-  background: #da6f2b;
-}
-.color15 {
-  background: #59a627;
-}
-.color16 {
-  background: #30997a;
-}
-.color17 {
-  background: #6a478f;
-}
-.color18 {
-  background: #da6f2b;
-}
-
 header {
+  display: flex;
   border-bottom: 1px solid rgba(255,255,255,.08);
 }
 
@@ -146,11 +89,17 @@ header a:hover {
   color: white;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .lightbox {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
 }
 
 .lightbox .item {

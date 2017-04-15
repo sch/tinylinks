@@ -5,13 +5,17 @@
   "repository": {},
   "license": "MIT",
   "devDependencies": {
-    "express": "^4.15.2",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "rollup-endpoint": "^0.2.2",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
   },
   "scripts": {
     "start": "nodemon --ignore public server.js"
   },
   "dependencies": {
+    "express": "^4.15.2",
+    "mustache-express": "^1.2.4",
     "turbolinks": "^5.0.0"
   }
 }

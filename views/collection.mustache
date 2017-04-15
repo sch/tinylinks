@@ -8,7 +8,9 @@
     </div>
   </div>
 
-  <section class="grid-1">
-    <!-- $grid -->
+  <section class="grid">
+    {{#items}}
+    <a href="/item/{{id}}" style="background-color:{{color}}">{{id}}</a>
+    {{/items}}
   </section>
 </body>
