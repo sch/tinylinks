@@ -8,21 +8,6 @@ window.logger = {
   off: function () { localStorage.debug = ""; }
 };
 
-window.Turbolinks.ProgressBar = function () {
-}
-
-Turbolinks.ProgressBar.prototype.show = function () {
-  console.log("showing progress bar");
-}
-
-Turbolinks.ProgressBar.prototype.hide = function () {
-  console.log("hiding progress bar");
-}
-
-Turbolinks.ProgressBar.prototype.setValue = function (value) {
-  console.log("setting progress bar", value);
-}
-
 log("Starting turbolinks disabled");
 Turbolinks.controller.stop();
 Turbolinks.controller.disable();

@@ -20,7 +20,7 @@ var rollupConfig = {
   entry: path.join(__dirname, "client.js")
 };
 
-app.get("/", delayMiddleware(300, 1000), function (req, res) {
+app.get("/", delayMiddleware(300, 600), function (req, res) {
   var data = {
     title: "the collection page",
     items: range(51).map(makeItem),
@@ -29,7 +29,7 @@ app.get("/", delayMiddleware(300, 1000), function (req, res) {
   res.render("collection", data);
 });
 
-app.get("/item/:id", delayMiddleware(300, 700), function (req, res) {
+app.get("/item/:id", delayMiddleware(300, 500), function (req, res) {
   var id = parseInt(req.params.id, 10);
 
   var data = {
@@ -60,7 +60,7 @@ function range(count) {
 
 function delayMiddleware (min, max) {
   return function (req, res, next) {
-    var delay = Math.floor(Math.random() * max - min) + min;
+    var delay = Math.floor(Math.random() * (max - min)) + min;
     setTimeout(next, delay)
   }
 }
