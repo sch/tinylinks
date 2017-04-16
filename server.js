@@ -16,7 +16,7 @@ app.set("layout", "layout");
 app.use(express.static("public"));
 
 var rollupConfig = {
-  plugins: [resolve(), commonjs()],
+  plugins: [resolve({ browser: true }), commonjs()],
   entry: path.join(__dirname, "client.js")
 };
 

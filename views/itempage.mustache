@@ -1,13 +1,13 @@
 <body class="dark">
   <div class="page">
     <header style="display:flex">
-      <a href="/">back</a>
+      <a href="/" data-turbolinks-navigate-back>back</a>
       <span style="flex:1"></span>
       {{#previousImageLink}}
-      <a href="{{.}}">previous</a>
+      <a href="{{.}}" data-turbolinks-action="replace">previous</a>
       {{/previousImageLink}}
       {{#nextImageLink}}
-      <a href="{{.}}">next</a>
+      <a href="{{.}}" data-turbolinks-action="replace">next</a>
       {{/nextImageLink}}
     </header>
     <div class="lightbox">
